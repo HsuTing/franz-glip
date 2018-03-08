@@ -1,0 +1,21 @@
+{
+  "id": "glip",
+  "name": "Glip",
+  "version": "0.1.0",
+  "description": "Glip for franz",
+  "main": "index.js",
+  "author": {
+    "name": "HsuTing",
+    "email": "hsuting0106@gmail.com",
+    "url": "http://hsuting.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/HsuTing/franz-glip/",
+  "repository": "https://github.com/HsuTing/franz-glip.git",
+  "bugs": {
+    "url": "https://github.com/HsuTing/franz-glip/issues/"
+  },
+  "config": {
+    "serviceURL": "https://app.glip.com/"
+  }
+}
