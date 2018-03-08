@@ -16,6 +16,7 @@
     "url": "https://github.com/HsuTing/franz-glip/issues/"
   },
   "config": {
-    "serviceURL": "https://app.glip.com/"
+    "serviceURL": "https://app.glip.com/",
+    "hasNotificationSound": true
   }
 }
