@@ -1,16 +1,14 @@
 'use strict';
 
-/* TODO */
+const SELECTOR_CHANNELS_UNREAD = '.has-unread';
+
 module.exports = Franz => {
   const getMessages = getMessages => {
-    let count = document.querySelectorAll('._5fx8:not(._569x),._1ht3:not(._569x)').length;
-    const messageRequestsElement = document.querySelector('._5nxf');
+    const directMessages = document.querySelectorAll(`.people ${SELECTOR_CHANNELS_UNREAD}`).length;
+    const allMessages = document.querySelectorAll(SELECTOR_CHANNELS_UNREAD).length - directMessages;
 
-    if (messageRequestsElement) {
-      count += parseInt(messageRequestsElement.innerHTML, 10);
-    }
-
-    Franz.setBadge(count);
+    // set Franz badge
+    Franz.setBadge(directMessages, allMessages);
   };
 
   Franz.loop(getMessages);
